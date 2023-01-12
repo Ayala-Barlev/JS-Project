@@ -1,0 +1,337 @@
+
+#select >div {
+  margin-top: 180px;
+    position: relative;
+    bottom: 19px;
+    display: block;
+    margin: auto;
+    text-align: center;
+    opacity: 0.6;
+    width: 100%;
+    height: 600px;
+    cursor: pointer;
+
+  }
+
+  #inside{
+    border-left: 10px solid rgb(237, 155, 33);
+    background-image: url(images/פנים\ \(4\).jpg);
+    background-size: cover;
+  }
+  #outside{
+    border-right: 10px solid rgb(237, 155, 33);
+    background-image: url(images/חוץ\ \(2\).jpg);
+    background-size: cover;
+  }
+  #outside:hover,#inside:hover{
+    opacity: 1;
+    transition: 550ms;
+  }
+
+  #select{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
+    background-color:black;
+  }
+  #select b{ 
+    color:black;
+    opacity: 0.7;
+    font-size: 10rem;
+  }
+/* תפריט */
+#navbar>div {
+  margin-right: 50px;
+}
+
+#navbar {
+  direction: rtl;
+  z-index:  1;
+  overflow: hidden;
+  background-color: #333;
+  height: 55px;
+}
+
+#navbar a {
+
+  font-size: 17px;
+  float: right;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 16px;
+  padding-left: 40px;
+  padding-right: 40px;
+  text-decoration: none;
+}
+
+.fab.fa-youtube {
+  font-size: 30px;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky+.content {
+  padding-top: 60px;
+}
+
+.pill-nav a:hover {
+  background-color: rgb(72, 72, 72);
+  transition: 550ms;
+}
+
+.pill-nav a.active {
+  background-color: rgb(115, 114, 114);
+}
+
+
+/* Bordered form */
+form {
+  border: 3px solid #f1f1f1;
+}
+
+
+
+input {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+input[type="date"] {
+  width: 45%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+
+
+button {
+  direction: rtl;
+  background-color: rgb(237, 155, 33);
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+#buttonForm {
+  background-color: #333;
+  z-index: 1;
+  width: 100px;
+  margin: auto;
+  padding-bottom: 16px;
+  border-radius: 10%;
+}
+
+#buttonForm:hover {
+  background-color: rgb(237, 155, 33);
+  transition: 550ms;
+}
+
+/* Add a hover effect for buttons */
+button:hover {
+  opacity: 0.8;
+}
+
+/* Extra style for the cancel button (red) */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+/* Center the avatar image inside this container */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+/* Avatar image */
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+/* Add padding to containers */
+.container {
+  padding: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  #about {
+    height: 150%
+  }
+}
+
+/* The Modal (background) */
+.modal {
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5px auto;
+  /* 15% from the top and centered */
+  border: 1px solid #888;
+  width: 35%;
+  /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  /* Position it in the top right corner outside of the modal */
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+/* Close button on hover */
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {
+    -webkit-transform: scale(0)
+  }
+
+  to {
+    -webkit-transform: scale(1)
+  }
+}
+
+@keyframes animatezoom {
+  from {
+    transform: scale(0)
+  }
+
+  to {
+    transform: scale(1)
+  }
+}
+/* הודעה שהטופס נשלח */
+#snackbar {
+  visibility: hidden;
+  min-width: 250px;
+  margin-left: -125px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  border-radius: 2px;
+  padding: 16px;
+  position: fixed;
+  z-index: 1;
+  left: 50%;
+  bottom: 30px;
+}
+#snackbar.show {
+  visibility: visible;
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadein {
+  from {
+    bottom: 0;
+    opacity: 0;
+  }
+
+  to {
+    bottom: 30px;
+    opacity: 1;
+  }
+}
+
+@keyframes fadein {
+  from {
+    bottom: 0;
+    opacity: 0;
+  }
+
+  to {
+    bottom: 30px;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeout {
+  from {
+    bottom: 30px;
+    opacity: 1;
+  }
+
+  to {
+    bottom: 0;
+    opacity: 0;
+  }
+}
+
+@keyframes fadeout {
+  from {
+    bottom: 30px;
+    opacity: 1;
+  }
+
+  to {
+    bottom: 0;
+    opacity: 0;
+  }
+}
+
+
